@@ -1,2 +1,67 @@
 # Customer-Service-Requests-Analysis
-project in progress :)!
+this project provied by  [Simplilearn](https://www.simplilearn.com/?&utm_source=google&utm_medium=cpc&utm_term=simpli%20learn&utm_content=770484214-42219174444-464693558568&utm_device=c&utm_campaign=Search-Brand-MiddleEast-ROW-AllDevice-adgroup-Typos-Exact&gclid=CjwKCAjwzt6LBhBeEiwAbPGOgZVjH1s1lnaeuDqYWHdscMp7x2jdMv8us_prX6CbCWTnDjZGzHE_2xoCrqkQAvD_BwE) ©
+
+### Background of Problem Statement 
+NYC 311's mission is to provide the public with quick and easy access to all New York City government services and information while offering the best customer service. Each day, NYC311 receives thousands of requests related to several hundred types of non-emergency services, including noise complaints, plumbing issues, and illegally parked cars. These requests are received by NYC311 and forwarded to the relevant agencies such as the police, buildings, or transportation. The agency responds to the request, addresses it, and then closes it.\
+###  Analysis Tasks to be performed:
+- Import a 311 NYC service request.
+- ‘Request_Closing_Time’ as the time elapsed between request creation and request closing.
+- Provide major insights/patterns that you can offer in a visual format
+- Order the complaint types based on the average ‘Request_Closing_Time’, grouping them for different locations.
+    - Whether the average response time across complaint types is similar or not (overall)
+    - Are the type of complaint or service requested and location related?
+# Test to accept Null Hypothesis 
+|              Field             |                                 Description                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| Unique Key                     | (Plain text) - Unique identifier for the complaints                                         |
+| Created Date                   | (Date and Time) - The date and time on which the complaint is raised                        |
+| Closed Date                    | (Date and Time)  - The date and time on which the complaint is closed                       |
+| Agency                         | (Plain text) - Agency code                                                                  |
+| Agency Name                    | (Plain text) - Name of the agency                                                           |
+| Complaint Type                 | (Plain text) - Type of the complaint                                                        |
+| Descriptor                     | (Plain text) - Complaint type label (Heating - Heat, Traffic Signal Condition - Controller) |
+| Location Type                  | (Plain text) - Type of the location (Residential, Restaurant, Bakery, etc)                  |
+| Incident Zip                   | (Plain text) - Zip code for the location                                                    |
+| Incident Address               | (Plain text) - Address of the location                                                      |
+| Street Name                    | (Plain text) - Name of the street                                                           |
+| Cross Street 1                 | (Plain text) - Detail of cross street                                                       |
+| Cross Street 2                 | (Plain text) - Detail of another cross street                                               |
+| Intersection Street 1          | (Plain text) - Detail of intersection street if any                                         |
+| Intersection Street 2          | (Plain text) - Detail of another intersection street if any                                 |
+| Address Type                   | (Plain text) - Categorical (Address or Intersection)                                        |
+| City                           | (Plain text) - City for the location                                                        |
+| Landmark                       | (Plain text) - Empty field                                                                  |
+| Facility Type                  | (Plain text) - N/A                                                                          |
+| Status                         | (Plain text) - Categorical (Closed or Pending)                                              |
+| Due Date                       | (Date and Time) - Date and time for the pending complaints                                  |
+| Resolution Action Updated Date | (Date and Time) - Date and time when the resolution was provided                            |
+| Community Board                | (Plain text) - Categorical field (specifies the community board with its code)              |
+| Borough                        | (Plain text) - Categorical field (specifies the community board)                            |
+| X Coordinate                   | (State Plane) (Number)                                                                      |
+| Y Coordinate                   | (State Plane) (Number)                                                                      |
+| Park Facility Name             | (Plain text) - Unspecified                                                                  |
+| Park Borough                   | (Plain text) - Categorical (Unspecified, Queens, Brooklyn etc)                              |
+| School Name                    | (Plain text) - Unspecified                                                                  |
+| School Number                  | (Plain text)  - Unspecified                                                                 |
+| School Region                  | (Plain text)  - Unspecified                                                                 |
+| School Code                    | (Plain text)  - Unspecified                                                                 |
+| School Phone Number            | (Plain text)  - Unspecified                                                                 |
+| School Address                 | (Plain text)  - Unspecified                                                                 |
+| School City                    | (Plain text)  - Unspecified                                                                 |
+| School State                   | (Plain text)  - Unspecified                                                                 |
+| School Zip                     | (Plain text)  - Unspecified                                                                 |
+| School Not Found               | (Plain text)  - Empty Field                                                                 |
+| School or Citywide Complaint   | (Plain text)  - Empty Field                                                                 |
+| Vehicle Type                   | (Plain text)  - Empty Field                                                                 |
+| Taxi Company Borough           | (Plain text)  - Empty Field                                                                 |
+| Taxi Pick Up Location          | (Plain text)  - Empty Field                                                                 |
+| Bridge Highway Name            | (Plain text)  - Empty Field                                                                 |
+| Bridge Highway Direction       | (Plain text)  - Empty Field                                                                 |
+| Road Ramp                      | (Plain text)  - Empty Field                                                                 |
+| Bridge Highway Segment         | (Plain text)  - Empty Field                                                                 |
+| Garage Lot Name                | (Plain text)  - Empty Field                                                                 |
+| Ferry Direction                | (Plain text)  - Empty Field                                                                 |
+| Ferry Terminal Name            | (Plain text)  - Empty Field                                                                 |
+| Latitude                       | (Number) - Latitude of the location                                                         |
+| Longitude                      | (Number) - Longitude of the location                                                        |
+| Location                       | (Location) - Coordinates (Latitude, Longitude)                                              |
